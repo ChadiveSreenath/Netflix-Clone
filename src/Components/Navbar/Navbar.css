@@ -1,0 +1,30 @@
+.container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  position: absolute;
+  z-index: 69;
+}
+.icon {
+  color: #c53030;
+  font-size: 4rem;
+  font-weight: bold;
+  cursor: 'pointer';
+}
+.sign-up {
+  background-color: #c53030;
+  font-weight: 600;
+  padding: 0.5rem 1.5rem;
+  border-radius: 5px;
+  cursor: pointer;
+  color: white;
+
+}
+.sign-in {
+  cursor: pointer;
+  padding: 0.5rem 1.5rem;
+  color: white;
+  background-color: transparent;
+}

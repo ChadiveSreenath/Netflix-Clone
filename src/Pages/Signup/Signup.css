@@ -1,0 +1,55 @@
+.bg-banner {
+  object-fit: cover;
+  width: 100%;
+  position: absolute;
+  height: 100%;
+}
+.gradient {
+  height: 100vh;
+  width: 100%;
+  top: 0;
+  left: 0;
+  position: fixed;
+  background: linear-gradient(to right , rgba(0, 0, 0, 0.6),rgba(0,0,0,0.6));
+}
+.bg-overlay{
+    position: fixed;
+    width: 100%;
+    padding: 4rem 24rem;
+    z-index: 50;
+}
+.bg-form{
+    height: 500px;
+    width: 450px;
+    margin: auto;
+    background: linear-gradient(to top ,rgba(0,0,0,0.9),rgba(0,0,0,0.6));
+    color: white;
+    margin-top: 30px;
+}
+.form-tags{
+    height: 100vh;
+    width: 100vh;
+    padding: 3rem;
+}
+form{
+    display: grid;
+    grid-gap: 20%;
+    width: 60%;
+    margin-top: 20px;
+}
+form input{
+    padding: 0.9rem;
+    background-color:#1a202c;
+    outline: none;
+    color: white;
+}
+.signup{
+    background-color: #c53030;
+    padding: 0.75rem 1.5rem;
+    border-radius: 5px;
+    cursor: pointer;
+    color: white;
+    margin: auto;
+    width: 100%;
+}
+
