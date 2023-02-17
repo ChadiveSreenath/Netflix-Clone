@@ -8,11 +8,11 @@ const HomePage = () => {
     <div>
 
       <Main />
-      <Row fetchUrl={requests.requestUpcoming} title="Up comming" />
-      <Row fetchUrl={requests.requestPopular} title="Popular" />
-      <Row fetchUrl={requests.requestToprated} title="TopRated" />
-      <Row fetchUrl={requests.requestTrending} title="Trending" />
-      <Row fetchUrl={requests.requestHorror} title="Horror" />
+      <Row fetchUrl={requests.requestUpcoming} title="Up comming" id="Up comming" />
+      <Row fetchUrl={requests.requestPopular} title="Popular" id="Popular" />
+      <Row fetchUrl={requests.requestToprated} title="TopRated" id="TopRated" />
+      <Row fetchUrl={requests.requestTrending} title="Trending" id="Trending" />
+      <Row fetchUrl={requests.requestHorror} title="Horror" id="Horror" />
     </div>
   )
 }

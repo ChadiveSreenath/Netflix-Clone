@@ -44,25 +44,28 @@
   height: auto;
   display: block;
 }
-.like-icon{
+.like-icon {
   position: absolute;
-  top:0;
+  top: 0;
   margin-top: 25px;
   margin-left: 30px;
-  color:  #e2e8f0;
+  color: #e2e8f0;
 }
-.slider{
+.slider {
   height: 100%;
   width: 100%;
-  overflow-x: scroll;
+  overflow-x: auto;
   white-space: nowrap;
   scroll-behavior: smooth;
   overflow: hidden;
   position: relative;
 }
-.next-icon{
+.slider::-webkit-scrollbar {
+  display: none;
+}
+.next-icon {
   background-color: white;
-  position: absolute;
+  /* position: absolute; */
   /* opacity: 0; */
   border-radius: 50%;
   right: 0;
@@ -85,4 +88,3 @@
     width: 280px;
   }
 }
-

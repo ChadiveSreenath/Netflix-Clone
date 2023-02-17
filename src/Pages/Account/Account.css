@@ -24,12 +24,27 @@ body {
 .saved-movies {
   margin-top: 22%;
   position: absolute;
-  margin-left: 30px;
 }
-.delete-icon{
+.delete-icon {
   position: absolute;
   top: 0;
   padding: 1rem;
   margin-left: 80%;
   color: gray;
+}
+.next-icon {
+  background-color: white;
+  /* position: absolute; */
+  /* opacity: 0; */
+  border-radius: 50%;
+  right: 0;
+}
+.slider {
+  height: 100%;
+  width: 100%;
+  white-space: nowrap;
+  overflow: auto;
+  scroll-behavior: smooth;
+  position: relative;
+  max-width: calc(100vw - 80px);
 }

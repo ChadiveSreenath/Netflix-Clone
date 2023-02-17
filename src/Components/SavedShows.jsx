@@ -18,6 +18,11 @@ const SavedShows = () => {
         var slider = document.getElementById("slider")
         slider.scrollLeft = slider.scrollLeft - 500
     }
+
+    const slideRight = () => {
+        var slider = document.getElementById("slider")
+        slider.scrollLeft = slider.scrollLeft + 500
+    }
     const movieRef = doc(db, "users", `${user?.email}`)
     const deleteMovie = async (passedId) => {
         try {
@@ -31,24 +36,23 @@ const SavedShows = () => {
         }
     }
     return (
-        <>
-            <div className='movies-type'>
-                <MdChevronLeft size={40} className="next-icon" onClick={() => slideLeft} />
-                <div id="slider" className='slider'>
-                    {
-                        movies?.map((item, id) => (
-                            <div className='row-images' key={id}>
-                                <img src={`https://image.tmdb.org/t/p/w500/${item?.img}`} alt={item?.title} />
-                                <div className="hover-effect">
-                                    <p className='row-title'>{item?.title}</p>
-                                    <p className='delete-icon' onClick={() => deleteMovie(item.id)}><AiOutlineClose /></p>
-                                </div>
+        <div className='movies-type'>
+            <MdChevronLeft size={40} className="next-icon" onClick={() => slideLeft()} />
+            <div className='slider' id='slider'>
+                {
+                    movies?.map((item, id) => (
+                        <div className='row-images' key={id}>
+                            <img src={`https://image.tmdb.org/t/p/w500/${item?.img}`} alt={item?.title} />
+                            <div className="hover-effect">
+                                <p className='row-title'>{item?.title}</p>
+                                <p className='delete-icon' onClick={() => deleteMovie(item.id)}><AiOutlineClose /></p>
                             </div>
-                        ))}
-                </div>
-                <MdChevronRight size={40} className="next-icon" onClick={() => slideLeft} />
+                        </div>
+                    ))}
             </div>
-        </>
+            <MdChevronRight size={40} className="next-icon" onClick={() => slideRight()} />
+        </div>
+
     )
 }
 
